@@ -248,7 +248,7 @@ public class Hmm {
 			}
 			//System.out.println("Processing each sentences: "+playerLines.size());
 			// process each sentence's words
-			for (int i = 0; i < 5000; i++) {
+			for (int i = 0; i < playerLines.size(); i++) {
 				System.out.println(i);
 				//We will pass the words in a sentence to the processSentences method which will then create the Maps for predicting words in Hidden Markov Model.
 				processSentences(Arrays.asList(playerLines.get(i).split(" ")));
