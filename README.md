@@ -37,12 +37,6 @@
 	4. If a word is preceded by more than 2 words, we will consider only the closest two preceding words and discard the rest of the words.
  - When we send a text to the trained model, it will take at most the last two words of the sentence and pass it to the model. The model then checks the existing pairs and if it finds a match, it will return the word with the highest probability of occurance while training. If more than on word have the same probability of occurance while training, the first word will be predicted by default. The process is same for only one preceding word. If there are no preceding words provided, then the model predicts the word from the list of first words randomly.
 
- Process:
- - Download the data from https://www.kaggle.com/kingburrito666/shakespeare-plays
- - Load the dataset into Java Arraylist.
- - Drop the columns that are not significant in predicting the words.
- - 
-
  Result:
  We have successfully implemented the Hidden Markov model algorithm to predict the text data based on a couple of preceding words. Also, we have generated a text corpus with the help of implemented model as shown below:
  
